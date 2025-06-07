@@ -1,13 +1,13 @@
 // Importa componentes da biblioteca React Native para estrutura visual e interação
 import {
-  ActivityIndicator, // Indicador de carregamento (spinner)
-  Modal, // Componente de texto
-  Pressable,
-  SafeAreaView, // Garante que o conteúdo respeite áreas seguras (ex: notch)
-  ScrollView, // Container genérico para layout
-  StyleSheet, // Permite rolagem vertical do conteúdo
-  Text, // Componente de modal (janela flutuante)
-  View, // Container genérico para layout
+    ActivityIndicator, // Indicador de carregamento (spinner)
+    Modal, // Componente de texto
+    Pressable,
+    SafeAreaView, // Garante que o conteúdo respeite áreas seguras (ex: notch)
+    ScrollView, // Container genérico para layout
+    StyleSheet, // Permite rolagem vertical do conteúdo
+    Text, // Componente de modal (janela flutuante)
+    View, // Container genérico para layout
 } from 'react-native';
 
 import { router } from 'expo-router';
@@ -38,10 +38,6 @@ export default function Modulo2() {
                 <Pressable onPress={() => router.push('/')} style={styles.button}>
                     <Text style={{ color: 'white', fontWeight: 'bold' }}>Ir para Home</Text>
                 </Pressable>
-                            {/* Conteúdo detalhado da modal (lista, mensagem, etc.) */}
-                            {/* TODO: 
-                            <DetalhesContent /> 
-                            */}
 
                 {/* Modal exibido sobre o conteúdo principal */}
                 <Modal visible={modalVisible} transparent animationType="slide">
@@ -51,7 +47,9 @@ export default function Modulo2() {
                         <View style={styles.modalContent}>
 
                             {/* Conteúdo detalhado da modal (lista, mensagem, etc.) */}
-                            
+                            {/* TODO: 
+                            <DetalhesContent /> 
+                            */}
 
                             {/* Seção de botões de ação */}
                             <View style={styles.actions}>
