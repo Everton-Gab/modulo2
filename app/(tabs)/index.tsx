@@ -34,6 +34,9 @@ export default function HomeScreen() {
             <Pressable onPress={() => router.push('/modulo2')} style={styles.button}>
                 <Text style={styles.buttonText}>Ir para o Modulo 2</Text>
             </Pressable>
+            <Pressable onPress={() => router.push('/modulo3')} style={styles.button}>
+                <Text style={styles.buttonText}>Ir para o Modulo 3</Text>
+            </Pressable>
 
             {/* Botão para navegar para a tela "Explore" */}
             <Pressable onPress={() => router.push('/explore')} style={styles.button}>
